@@ -3,119 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Güvenli Bağlantı Doğrulaması</title>
+    <title>140+ IQ Görsel Algı Testi</title>
     <style>
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f4f7f6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a2e;
+            color: white;
             margin: 0;
-            color: #333;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
         }
         .container {
-            background-color: #ffffff;
-            padding: 40px 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            text-align: center;
-            max-width: 420px;
             width: 90%;
-            box-sizing: border-box;
+            max-width: 500px;
+            background-color: #16213e;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            text-align: center;
+            z-index: 10;
         }
-        .icon {
-            width: 72px;
-            height: 72px;
-            margin-bottom: 20px;
-            fill: #10b981; /* Güven veren yeşil renk */
+        h1 { font-size: 22px; color: #e94560; margin-bottom: 5px; }
+        p.subtitle { font-size: 14px; color: #a2a2bd; margin-bottom: 20px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 20px 0; }
+        .box { background-color: #0f3460; height: 100px; border-radius: 8px; cursor: pointer; transition: transform 0.2s; }
+        .box:hover { transform: scale(1.05); border: 2px solid #e94560; }
+        
+        .btn { background-color: #0f3460; color: white; border: 1px solid #e94560; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer; margin: 5px; font-weight: bold; width: 90%; max-width: 300px;}
+        .btn-hint { background-color: #e94560; color: white; animation: pulse 1.5s infinite; }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
-        h1 {
-            font-size: 24px;
-            margin-bottom: 12px;
-            font-weight: 600;
-            color: #1f2937;
-        }
-        p {
-            font-size: 15px;
-            color: #6b7280;
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
-        .status-box {
-            background-color: #ecfdf5;
-            color: #065f46;
-            padding: 12px;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 500;
-            margin-bottom: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            border: 1px solid #a7f3d0;
-        }
-        .button {
-            background-color: #3b82f6;
-            color: white;
-            border: none;
-            padding: 16px 32px;
-            font-size: 16px;
-            font-weight: 600;
-            border-radius: 8px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            transition: all 0.3s ease;
-            width: 100%;
-            box-sizing: border-box;
-            box-shadow: 0 4px 6px rgba(59, 130, 246, 0.25);
-        }
-        .button:hover {
-            background-color: #2563eb;
-            box-shadow: 0 6px 12px rgba(59, 130, 246, 0.3);
-            transform: translateY(-1px);
-        }
-        .button:active {
-            transform: translateY(1px);
-            box-shadow: none;
-        }
-        .footer {
-            margin-top: 30px;
-            font-size: 13px;
-            color: #9ca3af;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 5px;
-        }
+        
+        /* Reklam Alanları - Sayfa düzenini bozmaması için overflow ayarlandı */
+        .ad-space-top { margin: 15px 0; min-height: 90px; width: 100%; display: flex; justify-content: center; align-items: center; overflow: hidden;}
+        .ad-space-bottom { margin: 15px 0; min-height: 50px; width: 100%; display: flex; justify-content: center; align-items: center; overflow: hidden;}
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Kurumsal Kalkan İkonu -->
-        <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
-        </svg>
 
-        <h1>Bağlantı Doğrulandı</h1>
-        <p>İstenilen içeriğe yönlendiriliyorsunuz. Bağlantı kalitesi ve güvenliği altyapımız tarafından kontrol edilmiştir.</p>
-
-        <!-- Sahte Güvenlik Taraması Kutusu -->
-        <div class="status-box">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-            Sistem taraması temiz: Risk bulunmadı
-        </div>
-
-        <!-- Adsterra Linkine Giden Tıklama Butonu -->
-        <a href="https://www.effectivecpmnetwork.com/m1dxtn35g?key=31e1e315d5553b30194180074ceb8c1a" class="button">İçeriğe Devam Et</a>
-
-        <div class="footer">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM8.9 6c0-1.71 1.39-3.1 3.1-3.1s3.1 1.39 3.1 3.1v2H8.9V6z"/></svg>
-            256-Bit SSL ile korunmaktadır
-        </div>
+    <!-- ÜST BANNER: 728x90 -->
+    <div class="ad-space-top">
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '3edec164d12ba0b4e0a48a50e5430175',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+            };
+        </script>
+        <script type="text/javascript" src="https://www.highperformanceformat.com/3edec164d12ba0b4e0a48a50e5430175/invoke.js"></script>
     </div>
+
+    <!-- OYUN ALANI -->
+    <div class="container">
+        <h1>Bölüm 1: Görsel Algı</h1>
+        <p class="subtitle">Sadece 140 IQ ve üzeri insanlar farklı renkteki kutuyu 5 saniyede bulabilir.</p>
+        
+        <div class="grid" id="gameGrid"></div>
+        <p id="message" style="color: #e94560; font-weight: bold; height: 20px;"></p>
+
+        <!-- Etkileşim Butonları -->
+        <button class="btn btn-hint" onclick="getHint()">💡 Yakınlaştır / İpucu Al</button>
+        <button class="btn" onclick="nextLevel()">Sonraki Seviye ➡</button>
+    </div>
+
+    <!-- ALT BANNER: 320x50 -->
+    <div class="ad-space-bottom">
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '7bc5d585e0f4e55874b2e6531f0181fe',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+            };
+        </script>
+        <script type="text/javascript" src="https://www.highperformanceformat.com/7bc5d585e0f4e55874b2e6531f0181fe/invoke.js"></script>
+    </div>
+
+    <!-- POPUNDER KODU (Tıklamada arka planda sayfa açar) -->
+    <script type='text/javascript' src='//pl29787483.effectivecpmnetwork.com/5e/33/f9/5e33f9ba33cda1aa3712d66915d8b932.js'></script>
+
+    <!-- SOCIAL BAR KODU (Bildirim gibi çıkan reklam) -->
+    <script type='text/javascript' src='//pl29787480.effectivecpmnetwork.com/5b/27/3b/5b273be5f78db5e0848111f4f116c6d8.js'></script>
+
+    <!-- OYUNUN ZEKASI VE SMART LINK YÖNLENDİRMESİ -->
+    <script>
+        // Senin yeni Smart Link (Direct Link) Kodun
+        const adLink = "https://www.effectivecpmnetwork.com/ajaki9gu4k?key=68c96ce65fa113a26bd7b58762d87986";
+        let level = 1;
+
+        function triggerAd() { 
+            // Kullanıcı oyuna kapılıp tıkladıkça yeni sekmede reklam açar
+            window.open(adLink, '_blank'); 
+        }
+
+        function initGame() {
+            const grid = document.getElementById('gameGrid');
+            grid.innerHTML = '';
+            document.getElementById('message').innerText = '';
+            
+            const baseColor = `hsl(${Math.random() * 360}, 70%, 50%)`;
+            const diffColor = `hsl(${Math.random() * 360}, 70%, ${50 + (10 / level)}%)`;
+            const oddIndex = Math.floor(Math.random() * 9);
+            
+            for(let i=0; i<9; i++) {
+                let box = document.createElement('div');
+                box.className = 'box';
+                box.style.backgroundColor = (i === oddIndex) ? diffColor : baseColor;
+                
+                box.onclick = function() {
+                    if(i === oddIndex) {
+                        document.getElementById('message').innerText = "Doğru! Ama bu kolaydı...";
+                        triggerAd();
+                    } else {
+                        document.getElementById('message').innerText = "Yanlış kutu! Odaklan!";
+                        triggerAd();
+                    }
+                };
+                grid.appendChild(box);
+            }
+        }
+
+        function getHint() {
+            document.getElementById('message').innerText = "İpucu: Farklı renkteki kutuya odaklan!";
+            triggerAd();
+        }
+
+        function nextLevel() {
+            level++;
+            document.querySelector('h1').innerText = `Bölüm ${level}: İleri Düzey Algı`;
+            initGame();
+            triggerAd();
+        }
+
+        window.onload = initGame;
+    </script>
 </body>
 </html>
